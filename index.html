@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Massinissa Merouani - PhD Student at NYU">
+    <title>Massinissa Merouani | PhD Student</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-color: #57068c; /* NYU Violet-ish */
+            --secondary-color: #34495e;
+            --bg-light: #f8f9fa;
+        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333; }
+        
+        /* Navigation */
+        .navbar { box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .nav-link { font-weight: 500; color: var(--secondary-color) !important; }
+        .nav-link:hover { color: var(--primary-color) !important; }
+        
+        /* Header Profile */
+        .profile-img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10%;
+            border: 2px solid white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+            margin-bottom: 20px;
+        }
+        .hero-section { padding: 60px 0; background-color: white; }
+        .social-icon {
+            font-size: 1.5rem;
+            margin: 0 10px;
+            color: var(--secondary-color);
+            transition: color 0.3s;
+        }
+        .social-icon:hover { color: var(--primary-color); }
+        
+        /* Headings */
+        h2 { 
+            color: var(--secondary-color); 
+            border-bottom: 2px solid #eee; 
+            padding-bottom: 10px; 
+            margin-top: 50px; 
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+        h3 { font-size: 1.3rem; font-weight: 700; color: #2c3e50; margin-top: 20px;}
+        h4 { font-size: 1.1rem; font-style: italic; color: #666; }
+        
+        /* Content Styling */
+        .paper-title { font-weight: 700; color: #000; text-decoration: none; font-size: 1.1rem;}
+        .paper-title:hover { color: var(--primary-color); text-decoration: underline; }
+        .badge-award { background-color: #ffd700; color: #000; margin-left: 10px; }
+        .badge-tag { background-color: #e9ecef; color: #495057; margin-right: 5px; font-weight: 500; }
+        
+        .date-badge {
+            float: right;
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .date-badge { float: none; display: block; margin-bottom: 5px; }
+            .hero-text { text-align: center; }
+            .profile-container { text-align: center; }
+        }
+    </style>
+</head>
+<body class="bg-light">
+<div class="alert alert-primary rounded-0 text-center mb-0 small py-2" role="alert">
+    <strong><i class="fas fa-info-circle"></i> Hiring?</strong> I am on the job market for full-time roles starting Summer 2026. <a href="mailto:massinissa.m@nyu.edu" class="alert-link">Get in touch!</a>
+</div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#about">Massinissa Merouani</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-primary text-white px-3 ms-2" href="https://bit.ly/3Lnke7g" target="_blank">CV</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About / Hero -->
+        <!-- About / Hero -->
+    <section id="about" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 profile-container text-center">
+                    <!-- MAKE SURE profile.jpg IS IN YOUR FOLDER -->
+                    <img src="profile.jpg" alt="Massinissa Merouani" class="profile-img" />
+                </div>
+                <div class="col-md-8 hero-text">
+                    <h1 class="display-5 fw-bold">Massinissa Merouani</h1>
+                    <!-- <p class="lead">Ph.D. Student in Computer Science @ <a href="https://engineering.nyu.edu/" target="_blank" class="text-decoration-none">New York University</a></p> -->
+                    <p class="lead">
+    Ph.D. Student in Computer Science @<a href="https://engineering.nyu.edu/" target="_blank" class="text-decoration-none">New York University</a>
+    <br>
+    <span class="text-muted fs-6">NYUAD Global Ph.D. Fellow</span>
+</p>
+                    <!-- Job Market Status Badge -->
+                    <div class="mb-3">
+                        <span class="badge bg-success text-white p-2" style="font-size: 0.9rem;">
+                            <i class="fas fa-briefcase me-1"></i> On the Job Market (Available Summer 2026)
+                        </span>
+                    </div>
+
+                    <p>
+                        I am a Ph.D. student at the <strong>NYU Tandon School of Engineering</strong> advised by Professor <strong>Riyadh Baghdadi</strong>. My research interests lie at the intersection of 
+                        <strong>Machine Learning, Computer Systems, and High-Performance Computing</strong>.
+                    </p>
+                    <p>
+                        My research leverages <strong>Deep Learning</strong> and <strong>Large Language Models (LLMs)</strong> to solve compiler optimization problems. Specifically, I design systems that explore code transformation spaces to generate highly efficient code for modern hardware. 
+                        Previously, I was a Research Engineer at NYU Abu Dhabi and a Research Intern at MIT CSAIL (COMMIT group).
+                    </p>
+                    
+                    <!--  Call to action text -->
+                    <p class="fst-italic text-muted border-start border-4 border-primary ps-3">
+                        <strong>Status:</strong> I am actively seeking full-time opportunities starting Summer 2026. I am open to roles in both industry and academia where I can apply my expertise in ML and Systems.
+                    </p>
+                    
+                    <div class="mt-4">
+                        <a href="mailto:massinissa.m@nyu.edu" title="Email" target="_blank" class="social-icon"> <i class="fas fa-envelope me-1"></i></a>
+                        <a href="https://github.com/Mascinissa" title="GitHub" target="_blank" class="social-icon"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://linkedin.com/in/merouani-massinissa" title="LinkedIn" target="_blank" class="social-icon"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://scholar.google.com/citations?user=H0o8pDAAAAAJ&hl=en" title="Google Scholar" target="_blank" class="social-icon"><i class="fas fa-graduation-cap"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container pb-5">
+        
+        <!-- News / Highlights -->
+        <div class="alert alert-info mt-4" role="alert">
+            <i class="fas fa-bullhorn me-2"></i> <strong>Update Nov 2025:</strong> Two papers accepted at <span class="fw-bold">PACT 2025</span> (LOOPer and Agentic Auto-Scheduling)!
+        </div>
+
+        <!-- Publications -->
+        <section id="publications">
+            <h2>Selected Publications</h2>
+
+            <div class="mb-4">
+                <span class="date-badge">To appear Nov. 2025</span>
+                <a href="https://arxiv.org/pdf/2511.00592" class="paper-title">Agentic Auto-Scheduling: An Experimental Study of LLM-Guided Loop Optimization</a>
+                <br>
+                <i><strong>M. Merouani</strong>, I. Kara Bernou, R. Baghdadi</i>
+                <br>
+                34th International Conference on Parallel Architectures and Compilation Techniques (PACT 2025)
+                <br>
+                <a href="https://arxiv.org/pdf/2511.00592" class="small">[PDF]</a> <a href="#" class="small">[Code]</a>
+            </div>
+
+            <div class="mb-4">
+                <span class="date-badge">To appear Nov. 2025</span>
+                <a href="https://arxiv.org/pdf/2403.11522" class="paper-title">LOOPer: A Learned Automatic Code Optimizer For Polyhedral Compilers</a>
+                <br>
+                <i><strong>M. Merouani</strong>, A. Boudaoud, N. Aouadj, et al.</i>
+                <br>
+                34th International Conference on Parallel Architectures and Compilation Techniques (PACT 2025)
+                <br>
+                <a href="https://arxiv.org/pdf/2403.11522" class="small">[PDF]</a> <a href="#" class="small">[Code]</a>
+            </div>
+
+            <div class="mb-4">
+                <span class="date-badge">Mar. 2021</span>
+                <a href="https://proceedings.mlsys.org/paper_files/paper/2021/file/d9387b6d643efb25132be36f7b908d96-Paper.pdf" class="paper-title">A Deep Learning Based Cost Model for Automatic Code Optimization</a>
+                <span class="badge badge-award"><i class="fas fa-trophy"></i> Outstanding Paper Award</span>
+                <br>
+                <i>R. Baghdadi, <strong>M. Merouani</strong>, MH. Leghettas, et al.</i>
+                <br>
+                4th Conference on Machine Learning and Systems (MLSys 2021)
+                <br>
+                <div class="small text-muted">Also selected for oral presentation at NeurIPS 2020 ML for Systems workshop</div>
+                <a href="https://proceedings.mlsys.org/paper_files/paper/2021/file/d9387b6d643efb25132be36f7b908d96-Paper.pdf" class="small">[PDF]</a> 
+            </div>
+
+            <div class="mb-4">
+                <span class="date-badge">June 2022</span>
+                <a href="https://arxiv.org/pdf/2206.03684" class="paper-title">A Deep Learning Guided Exploration of Affine Unimodular Loop Transformations</a>
+                <br>
+                <i><strong>M. Merouani</strong>, K. Boudaoud, I. Aouadj, et al.</i>
+                <br>
+                12th International Workshop on Polyhedral Compilation Techniques (IMPACT 2022)
+            </div>
+            
+            <div class="mb-4">
+                <span class="date-badge">Feb. 2023</span>
+                <a href="https://dl.acm.org/doi/pdf/10.1145/3578360.3580257" class="paper-title">A Deep Learning Model for Loop Interchange</a>
+                <br>
+                <i>L. Mezdour, K. Kadem, <strong>M. Merouani</strong>, et al.</i>
+                <br>
+                32nd International Conference on Compiler Construction (CC 2023)
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience">
+            <h2>Experience</h2>
+            
+            <div class="card mb-3 border-0 shadow-sm">
+                <div class="card-body">
+                    <span class="date-badge">Sept. 2022 - Present</span>
+                    <h3>Graduate Research Assistant</h3>
+                    <h4>New York University Abu Dhabi (NYUAD)</h4>
+                    <p class="mt-2">Conducting research on AI-driven methods for automatic program optimization. Developing novel approaches using Large Language Models (LLMs) for compiler code generation and optimization.</p>
+                </div>
+            </div>
+
+            <div class="card mb-3 border-0 shadow-sm">
+                <div class="card-body">
+                    <span class="date-badge">Jan. 2021 - Aug. 2022</span>
+                    <h3>Research Engineer</h3>
+                    <h4>New York University Abu Dhabi</h4>
+                    <p class="mt-2">Worked on data-driven approaches for modeling computer code performance. Contributed to the development of the Tiramisu compiler infrastructure.</p>
+                </div>
+            </div>
+
+            <div class="card mb-3 border-0 shadow-sm">
+                <div class="card-body">
+                    <span class="date-badge">Aug. 2019 - July 2020</span>
+                    <h3>Research Intern</h3>
+                    <h4>MIT CSAIL (COMMIT Group)</h4>
+                    <p class="mt-2">Worked within the COMMIT group on automatic code optimization. Built deep learning models to guide the selection of efficient code transformations.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Awards & Service -->
+        <!-- <section id="awards">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Awards & Honors</h2>
+                    <ul class="list-group list-group-flush bg-transparent">
+                        <li class="list-group-item bg-transparent"><i class="fas fa-award text-warning me-2"></i> <strong>Outstanding Paper Award</strong>, MLSys 2021</li>
+                        <li class="list-group-item bg-transparent"><i class="fas fa-medal text-primary me-2"></i> <strong>NYUAD Global Ph.D. Fellowship</strong>, 2022</li>
+                        <li class="list-group-item bg-transparent"><i class="fas fa-star text-warning me-2"></i> <strong>1st Place Rank in Algeria</strong> (Global Top 7.5%), Google HashCode 2021</li>
+                        <li class="list-group-item bg-transparent"><i class="fas fa-star text-success me-2"></i> <strong>Baccalaureate Diploma with Honors</strong> (Top 1% Nationally), 2015</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h2>Professional Service</h2>
+                    <ul class="list-group list-group-flush bg-transparent">
+                        <li class="list-group-item bg-transparent"><strong>Artifact Evaluation Committee:</strong> CC'24 (Jan 2024)</li>
+                        <li class="list-group-item bg-transparent"><strong>Invited Speaker:</strong> MLSH 2021 & 2023 Workshops</li>
+                        <li class="list-group-item bg-transparent"><strong>Teaching Assistant:</strong> CS-UH 2220 Machine Learning (NYUAD, 2025)</li>
+                        <li class="list-group-item bg-transparent"><strong>Co-Organizer:</strong> GDG Algiers (2018-2020)</li>
+                    </ul>
+                </div>
+            </div>
+        </section> -->
+
+       
+        <!-- Education Section -->
+        <section id="education" class="mb-5 pt-3">
+            <h2>Education</h2>
+
+            <!-- PhD -->
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
+                <div class="flex-grow-1">
+                    <h3><i class="fas fa-university"></i> Ph.D. in Computer Science</h3>
+                    <h4 class="text-secondary">New York University - Tandon School of Engineering</h4>
+                    <div class="mb-2">
+                        <strong>Advisor:</strong> Prof. Riyadh Baghdadi <br>
+                        <strong>GPA:</strong> 4.0/4.0
+                    </div>
+                    <div class="text-muted small">
+                        <i class="fas fa-star text-warning"></i> Recipient of the NYUAD Global Ph.D. Fellowship
+                    </div>
+                </div>
+                <div class="text-md-end text-muted mt-2 mt-md-0">
+                    Sept. 2022 - Present
+                    <div class="small text-success fw-bold">Exp. Graduation: Fall 2026</div>
+                </div>
+            </div>
+
+            <!-- Masters -->
+            <div class="d-flex flex-column flex-md-row justify-content-between">
+                <div class="flex-grow-1">
+                    <h3><i class="fas fa-graduation-cap"></i> Master's in Computer Science</h3>
+                    <h4 class="text-secondary">Ecole Nationale Supérieure d'Informatique (ESI), Algiers</h4>
+                    <div>
+                        <strong>Major:</strong> Computer Systems <br>
+                        <strong>Thesis:</strong> A Deep Learning Based Cost Model for Automatic Code Optimization in Tiramisu
+                    </div>
+                </div>
+                <div class="text-md-end text-muted mt-2 mt-md-0">
+                    Sept. 2015 - Dec. 2020
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Skills -->
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="mb-3">
+                <strong>Languages:</strong> 
+                <span class="badge badge-tag">Python</span> <span class="badge badge-tag">C/C++</span> <span class="badge badge-tag">Java</span> <span class="badge badge-tag">SQL</span>
+            </div>
+            <div class="mb-3">
+                <strong>ML & Data:</strong> 
+                <span class="badge badge-tag">PyTorch</span> <span class="badge badge-tag">TensorFlow</span> <span class="badge badge-tag">Scikit-learn</span> <span class="badge badge-tag">W&B</span>
+            </div>
+            <div class="mb-3">
+                <strong>HPC & Systems:</strong> 
+                <span class="badge badge-tag">CUDA</span> <span class="badge badge-tag">OpenMP</span> <span class="badge badge-tag">MPI</span> <span class="badge badge-tag">Docker</span> <span class="badge badge-tag">Slurm</span>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="text-center py-4 mt-5 border-top">
+        <p class="text-muted small">&copy; 2025 Massinissa Merouani.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

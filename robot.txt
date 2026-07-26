@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mascinissa.github.io/sitemap.xml
